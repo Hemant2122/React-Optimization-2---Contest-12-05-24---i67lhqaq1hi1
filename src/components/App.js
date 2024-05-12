@@ -14,7 +14,9 @@ const OptimizeTheOperation = ({ onClick }) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    setNumber(Number(event.target.num.value));
+    setTimeout(() => {
+      setNumber(Number(event.target.num.value));
+    }, 3000);
   };
 
   return (
